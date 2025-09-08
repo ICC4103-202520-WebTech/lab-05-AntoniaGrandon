@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Objective
 Add basic controllers and views to display existing records. No create/edit functionality yet.
 
@@ -13,3 +14,29 @@ Add basic controllers and views to display existing records. No create/edit func
 - Index and show pages for all main entities.
 - Navigation menu linking to each section.
 
+=======
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+>>>>>>> fd1b695 (listo)
