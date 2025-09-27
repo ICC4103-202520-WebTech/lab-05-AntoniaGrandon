@@ -1,42 +1,22 @@
-<<<<<<< HEAD
+# Lab 5 — Associations & Validations
+
 ## Objective
-Add basic controllers and views to display existing records. No create/edit functionality yet.
+Connect the database tables using proper associations and add basic validations. Update seeds accordingly.
 
 ## Instructions
-1. Generate controllers for **Rooms**, **Guests**, **Reservations**, and **Services** with actions:
-   - `index`: list all records
-   - `show`: display details of a single record
-2. Create simple HTML views for each action.
-3. Add navigation links between pages for easier browsing.
-4. Display data from the seed file created in Lab 1.
+1. Add associations to models:
+   - A **Guest** has many **Reservations**.
+   - A **Room** has many **Reservations**.
+   - A **Reservation** belongs to one **Guest** and one **Room**.
+   - A **Reservation** has many **ServiceUsages**.
+   - A **ServiceUsage** belongs to one **Service** and one **Reservation**.
+   - An **Invoice** belongs to one **Reservation**.
+2. Add validations:
+   - Presence of required fields (e.g., names, codes, dates).
+   - Unique codes for reservations.
+   - Room price and service price must be non-negative.
+3. Update seed data to respect associations and validations.
 
 ## Deliverables
-- Index and show pages for all main entities.
-- Navigation menu linking to each section.
-
-=======
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
->>>>>>> fd1b695 (listo)
+- Models updated with associations and validations.
+- Seed file adjusted to create valid associated records.
